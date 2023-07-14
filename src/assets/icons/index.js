@@ -1,0 +1,6 @@
+export {default as htmlImg } from "./html5-original.svg"
+export {default as cssImg } from "./css3-original.svg"
+export {default as jsImg } from "./javascript-original.svg"
+export {default as reactImg } from "./react-original.svg"
+export {default as nodeImg } from "./nodejs-original.svg"
+export {default as gitImg } from "./git-original.svg"

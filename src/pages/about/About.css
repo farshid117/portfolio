@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+#AboutMe {
+    width: 100%;
+    height: 100vh !important;
+    scroll-behavior: smooth;
+    background-color: #e1bee7;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+}
+
+#AboutMe .dark {
+    background-color: #333;
+}
+
+.muirtl-17irsvw-MuiLinearProgress-bar1 {
+    left: 0 !important;
+    transform-origin: left !important;
+    direction: ltr !important;
+}
+
+.MuiDivider-root {
+    border-width: 1px !important;
+    border-color: rgb(37, 37, 37) !important;
+    margin-bottom: 10px !important;
+}

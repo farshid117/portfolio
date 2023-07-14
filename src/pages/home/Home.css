@@ -1,0 +1,30 @@
+
+.homePage {
+    height: 100vh;
+    background-color: #000;  
+}
+
+.textBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+}
+
+.myname{
+    text-shadow: 0 0 8px rgba(255,255,255,0.7);
+}
+
+.particles canvas{
+    z-index: 10000 !important;
+}
+.info{
+    font-family: "tanha" !important;
+}

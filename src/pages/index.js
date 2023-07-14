@@ -1,0 +1,7 @@
+export { default as Home } from "./home/Home"
+export { default as Logins } from "./login/Logins"
+export { default as About } from "./about/About"
+export { default as Rezume } from "./rezume/Rezume"
+export { default as Courses } from "./courses/Courses"
+export { default as Comments } from "./comments/Comments"
+export { default as Contact } from "./contact/Contact"  

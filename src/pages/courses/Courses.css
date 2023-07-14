@@ -1,0 +1,8 @@
+.Courses{
+    height: 100vh !important;
+    overflow-y: scroll !important;
+    background-color: #e1bee7 ;
+}
+.Courses.dark{
+    background-color: #333;
+}

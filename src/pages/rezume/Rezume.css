@@ -1,0 +1,11 @@
+.Rezume{
+    overflow-y: scroll !important;
+    height: 100vh !important;
+    background-color: #e1bee7;
+}
+.Rezume.dark{
+    background-color: #333;
+}
+.card-body{
+    background-color: rgba(0, 0, 0, .1);
+}
