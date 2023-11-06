@@ -14,12 +14,15 @@ const cacheRtl = createCache({
 
 const MainLayout = ({mode, children  }) => {
 
-    const theme = mode === "dark" ? darkTheme: lightTheme
+    const theme = mode === "dark" ? darkTheme : lightTheme
 
     return (
         <>
             <CacheProvider value={cacheRtl}>
-                <ThemeProvider theme={theme}>
+                <ThemeProvider theme={theme} dir="rtl"
+                    breakpoints={['xxl', 'xl', 'lg', 'md', 'sm', 'xs']}
+                    minBreakpoint="xs"
+                >
                     <HelmetProvider>
 
                         {children} {/* PortfolioContext.Provider + App.js content*/}
