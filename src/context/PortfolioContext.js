@@ -1,7 +1,6 @@
 import { createContext } from "react"
 
 const PortfolioContext = createContext({
-
   value: 0,
   setValue: () => { },
   mobileOpen: false,
