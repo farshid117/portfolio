@@ -6,12 +6,12 @@ import PortfolioContext from "../../context/PortfolioContext"
 
 const AppContainer = ({ children }) => {
 
-    const [mode, setMode] = useState()
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme : dark)')
+    const [mode, setMode] = useState()
     
     useEffect(() => {
         setMode(prefersDarkMode ? "dark" : "light")
-    }, [])
+    }, [prefersDarkMode])
 
     const handleChangeMode = () => {
         setMode(prevMode => prevMode === "dark" ? "light" : "dark")
@@ -45,6 +45,7 @@ const AppContainer = ({ children }) => {
 
             }}>
                 {children} {/* App.js content */}
+
             </PortfolioContext.Provider>
         </MainLayout>
     );

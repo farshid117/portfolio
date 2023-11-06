@@ -22,7 +22,7 @@ const MainLayout = ({mode, children  }) => {
                 <ThemeProvider theme={theme}>
                     <HelmetProvider>
 
-                        {children}
+                        {children} {/* PortfolioContext.Provider + App.js content*/}
                         
                     </HelmetProvider>
                 </ThemeProvider>

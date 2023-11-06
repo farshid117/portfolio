@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     <AppContainer>
-      <div className="App" >
+      <div className="App" dir="rtl" >
         <Grid container sx={{ height: "100vh", overflow: "hidden" }}>
           {/* todo: Sidebar */}
           <Grid xs md={3} lg={2} sx={{ bgcolor: grey[900], textAlign: "center", height:"100%" }}>
