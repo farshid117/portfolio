@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { MainLayout } from "../"
 import PortfolioContext from "../../context/PortfolioContext"
 
+/* AppContainer is Wraper for App.js */
 const AppContainer = ({ children }) => {
 
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme : dark)')
@@ -30,23 +32,27 @@ const AppContainer = ({ children }) => {
 
     return (
         <MainLayout mode={mode}>
-            <PortfolioContext.Provider value={{
-                value,
-                setValue,
-                mobileOpen,
-                setMobileOpen,
+            <HelmetProvider>
+                <PortfolioContext.Provider value={{
+                    value,
+                    setValue,
+                    mobileOpen,
+                    setMobileOpen,
 
-                mode,
-                setMode,
-                handleChangeMode,
+                    mode,
+                    setMode,
+                    handleChangeMode,
 
-                handleChange,
-                handleDrawerToggle,
+                    handleChange,
+                    handleDrawerToggle,
 
-            }}>
-                {children} {/* App.js content */}
+                }}>
+                    {children} {/* App.js content */}
 
-            </PortfolioContext.Provider>
+                </PortfolioContext.Provider>
+
+            </HelmetProvider>
+          
         </MainLayout>
     );
 }

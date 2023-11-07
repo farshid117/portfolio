@@ -2,7 +2,6 @@ import { ThemeProvider, CacheProvider } from '@emotion/react'
 import rtlPlugin from "stylis-plugin-rtl"
 import createCache from "@emotion/cache"
 import { prefixer } from "stylis"
-import { HelmetProvider } from "react-helmet-async"
 
 import { lightTheme, darkTheme } from "../Theme"
 
@@ -12,8 +11,8 @@ const cacheRtl = createCache({
     stylisPlugins: [prefixer, rtlPlugin],
 });
 
+/* MainLayout is Wraper for AppContainer */
 const MainLayout = ({mode, children  }) => {
-
     const theme = mode === "dark" ? darkTheme : lightTheme
 
     return (
@@ -23,11 +22,11 @@ const MainLayout = ({mode, children  }) => {
                     breakpoints={['xxl', 'xl', 'lg', 'md', 'sm', 'xs']}
                     minBreakpoint="xs"
                 >
-                    <HelmetProvider>
+                    
 
-                        {children} {/* PortfolioContext.Provider + App.js content*/}
+                        {children} {/*AppContainer content: HelmetProvider + PortfolioContext.Provider + App.js content*/}
                         
-                    </HelmetProvider>
+                    
                 </ThemeProvider>
             </CacheProvider>
         </>
