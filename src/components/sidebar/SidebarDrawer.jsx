@@ -18,7 +18,7 @@ const SidebarDrawer = () => {
         if (isMdUp) {
             setMobileOpen(false)
         }
-    }, [isMdUp] )
+    }, [isMdUp, setMobileOpen] )
 
     return (
         <Box sx={{ textAlign: "center" }} >
